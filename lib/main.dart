@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
 
@@ -30,7 +31,7 @@ class _WebRTCVideoStreamState extends State<WebRTCVideoStream> {
     // WebRTC Configuration
     Map<String, dynamic> config = {
       'iceServers': [
-        {'urls': 'stun:stun.l.google.com:19302'},
+        {'urls': 'stun:stun.l.google.com:19301'},
       ],
     };
 

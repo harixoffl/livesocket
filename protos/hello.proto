@@ -1,0 +1,26 @@
+syntax = "proto3";
+ 
+option csharp_namespace = "VideoStreaming";
+ 
+package videostreaming;
+ 
+service VideoService {
+
+    rpc StreamVideo(StreamingRequest) returns (stream VideoChunk);
+
+}
+ 
+message StreamingRequest {
+
+    string video_id = 1;
+
+}
+ 
+message VideoChunk {
+
+    bytes data = 1;
+
+}
+
+
+ protoc --plugin=protoc-gen-dart=" C:\Users\COMP\flutter_windows_3.22.2-stable\flutter\bin\cache\dart-sdk\bin" --proto_path=protos --dart_out=grpc:lib/src/generated protos/Grpc.proto

@@ -31,7 +31,7 @@ class _WebRTCVideoStreamState extends State<WebRTCVideoStream> {
     // WebRTC Configuration
     Map<String, dynamic> config = {
       'iceServers': [
-        {'urls': 'stun:stun.l.google.com:19306'},
+        {'urls': 'stun:stun.l.google.com:19307'},
       ],
     };
 
